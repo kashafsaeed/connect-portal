@@ -45,7 +45,7 @@ const Home = () => {
                 <img
                   src={heroImg}
                   alt="LearnNova Hero"
-                  className="rounded-2xl shadow-xl w-full h-auto object-cover "
+                  className="rounded-2xl shadow-xl w-full h-auto object-cover"
                 />
               </div>
             </div>
@@ -54,7 +54,7 @@ const Home = () => {
       </section>
 
       {/* --- Stats Cards Section --- */}
-      <section className="pb-20 pt-20">
+      <section className="pb-20 pt-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
             {stats.map((stat, index) => (
@@ -73,6 +73,28 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* --- Ready to Start Section (New) --- */}
+      <section className="py-16 mb-30 lg:py-20  bg-[#003262] text-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl lg:text-5xl font-bold mb-6">
+            Ready to Start Your Journey?
+          </h2>
+          <p className="text-blue-100 text-lg lg:text-xl mb-10 leading-relaxed">
+            Join thousands of students already learning on LearnNova. 
+            Whether you want to start a new career or master a new hobby, we have the right course for you.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <button className="px-10 py-4 bg-white text-[#003262] font-bold rounded-full hover:bg-blue-50 transition-colors shadow-lg">
+              Join Now
+            </button>
+            <button className="px-10 py-4 border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-[#003262] transition-all">
+              Contact Support
+            </button>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 };
